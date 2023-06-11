@@ -1,3 +1,6 @@
+Autores: Daniel Baeta e Thiago Cabral
+Matrícula: 201965122C e 201965220AC
+
 > module Logic where
 
 > import Utils
