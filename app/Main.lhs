@@ -18,7 +18,7 @@ Matrícula: 201965122C e 201965220AC
 >                 mines = read minesStr :: Int
 >             field <- createField size mines
 >             assertGame False False field
->         _ -> putStrLn "Usage: cabal run LPHaskell -- <size> <mines>"
+>         _ -> putStrLn "Usage: cabal run LPHaskell <size> <mines>"
 
 > -- Verifica as condições de termino
 > assertGame :: Bool -> Bool -> Field -> IO ()

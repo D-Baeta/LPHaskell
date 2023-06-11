@@ -22,7 +22,7 @@ Matrícula: 201965122C e 201965220AC
 > -- Cria o campo (celula vazia -> randomiza minas -> conta as minas adjacentes)
 > createField :: Int -> Int -> IO Field
 > createField size numMines = do
->   let ajustedSize = max 1 (min size 26)
+>   let ajustedSize = max 2 (min size 26)
 >       positions = [(row, col) | row <- [1..ajustedSize], col <- take ajustedSize ['A'..]]
 >   let emptyCells = map createCell positions
 >   randomizedIndexes <- randomizeMineIndexes (ajustedSize*ajustedSize) numMines
